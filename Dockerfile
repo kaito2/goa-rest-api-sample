@@ -14,6 +14,7 @@ RUN go get -u goa.design/goa/v3@v3.0.6
 RUN go get -u goa.design/goa/v3/...@v3.0.6
 
 COPY . .
+RUN ./scripts/goa_gen.sh
 
 # it will take the flags from the environment
 RUN go build -o main ./cmd/echo_server

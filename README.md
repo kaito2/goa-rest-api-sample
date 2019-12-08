@@ -1,5 +1,9 @@
 # goa-rest-api-sample
 
+## API doc
+
+see: [swagger](./doc/openapi.yaml)
+
 ## Build & Push
 
 ```

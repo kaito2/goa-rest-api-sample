@@ -3,7 +3,7 @@ info:
   title: Echo Service
   description: This is HTTP echo service
   version: ""
-host: 0.0.0.0:8088
+host: 0.0.0.0:8080
 consumes:
 - application/json
 - application/xml

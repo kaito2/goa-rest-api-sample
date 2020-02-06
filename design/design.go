@@ -1,13 +1,16 @@
 package design
 
-import . "goa.design/goa/v3/dsl"
+import (
+	. "goa.design/goa/v3/dsl"
+	_ "goa.design/plugins/v3/zerologger"
+)
 
 // API describes the global properties of the API server.
 var _ = API("echo", func() {
 	Title("Echo Service")
 	Description("This is HTTP echo service")
 	Server("echo-server", func() {
-		Host("localhost", func() { URI("http://0.0.0.0:8088") })
+		Host("localhost", func() { URI("http://0.0.0.0:8080") })
 	})
 })
 
